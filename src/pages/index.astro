@@ -1,6 +1,7 @@
 ---
 import HeadingComponent from "../components/headingcomponent.astro";
 import MainContent from "../components/mainContent.astro";
+import { BbStarTrail } from "beautiful-backgrounds";
 ---
 
 <html lang="en">
@@ -10,14 +11,20 @@ import MainContent from "../components/mainContent.astro";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>Lyss</title>
+        <!--
+        possible background, Rarity and Twilight inspired
+        <bb-liquid-lines style="width: 100%; height: 500px; border-radius: 15px" bg-colors="#000000, #6c05a8" bg-angle="0" line-count="8" line-amplitude="189" line-frequency="0.002" speed="0.1" line-spacing="35" line-width="3.3" line-hue-start="0" line-hue-end="0" line-saturation="6" line-offset-step="2" line-colors="indigo, violet, purple, white, white, " wiggle-amplitude="34" wiggle-speed="0.3" trail-opacity="0.05"></bb-liquid-lines>
+        will have to figure out how this actually works.
+
+        this cosmic dust background is also pretty fun
+        <bb-star-trail style="width: 100%; height: 500px; border-radius: 15px" bg-colors="#0a0a14, #0a0a14" bg-angle="0" particle-size-min="0.1" particle-size-max="0.8" particle-speed-min="0.04" particle-speed-max="0.03" particle-color-hue-start="200" particle-color-hue-end="280" particle-color-saturation-start="60" particle-color-saturation-end="90" particle-color-lightness-start="40" particle-color-lightness-end="70" particle-radius-min="" particle-radius-max="" particle-lifespan-min="3000" particle-lifespan-max="12000" particle-amount="6000" particle-force="-5" trail-opacity="0.126" particle-colors=""></bb-star-trail>
+
+        -->
     </head>
     <body>
-
-        <HeadingComponent/>
-
-=======
-        <HeadingComponent headingText="This is Lyss' Header" />
+        <bb-star-trail style="width: 100%; height: 500px; border-radius: 15px" bg-colors="#0a0a14, #0a0a14" bg-angle="0" particle-size-min="0.1" particle-size-max="0.8" particle-speed-min="0.04" particle-speed-max="0.03" particle-color-hue-start="200" particle-color-hue-end="280" particle-color-saturation-start="60" particle-color-saturation-end="90" particle-color-lightness-start="40" particle-color-lightness-end="70" particle-radius-min="" particle-radius-max="" particle-lifespan-min="3000" particle-lifespan-max="12000" particle-amount="6000" particle-force="-5" trail-opacity="0.126" particle-colors=""></bb-star-trail>
+        <HeadingComponent />
         <MainContent />
->>>>>>> 9e6bb4cad8903a4ce6460805058aabbd00655b0d
+
     </body>
 </html>

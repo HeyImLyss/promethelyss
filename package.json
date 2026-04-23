@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.8"
+    "astro": "^6.1.8",
+    "beautiful-backgrounds": "^1.0.0"
   }
 }

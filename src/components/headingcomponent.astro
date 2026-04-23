@@ -2,14 +2,30 @@
 const headingText = Astro.props;
 ---
 <style>
-    h1 {
-        background-color: gray;
-        border-radius: 1em;
+    nav {
+        background-color: grey;
+        border-radius: 2em;
         margin: 2em;
         padding: 1em;
-        text-align: center;
         border: solid black 3px;
     }
-</style>
 
-<h1>This is Lyss' Header</h1>
+    .navbar {
+        text-align: center;
+    }
+    .navbar a {
+        margin-right: 2em;
+
+    }
+
+
+</style>
+<nav>
+    <h1>This is Lyss' Header</h1>
+    <div class="navbar">
+        <a>home</a>
+        <a>about</a>
+        <a>writing</a>
+        <a>blog</a>
+    </div>
+</nav>
